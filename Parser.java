@@ -2,7 +2,6 @@ package javaapplication1;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
@@ -63,7 +62,7 @@ public class Parser {
     //El método saveContent debe lanzar una excepción FileOutputStream 
     //ya que el llamado del archivo se realiza por fuera del bloque trycatch
     //O en su defecto se debe ingresar este al bloque y manejar la excepción
-    public void saveContent(String content) throws FileNotFoundException {
+    public void saveContent(String content) {
         FileOutputStream o = new FileOutputStream(file);
         try {
 
